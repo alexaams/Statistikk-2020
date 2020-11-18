@@ -1,4 +1,5 @@
 import math
+import statistics as stats
 
 Bingbong = [39, 40, 40.4, 39.5, 38]
 
@@ -38,6 +39,7 @@ def Standarddavvik(maalinger):
     return stdavvik
 
 
-
+stda = stats.stdev(Bingbong)
+print("Standardavvik fra biblioteket: {}".format(stda))
 print(Standarddavvik(Bingbong))
 
